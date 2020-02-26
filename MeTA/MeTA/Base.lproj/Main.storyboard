@@ -252,21 +252,17 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Can-sX-9V0" firstAttribute="leading" secondItem="jSx-um-lLn" secondAttribute="trailing" constant="25" id="2s1-4s-5NQ"/>
                                     <constraint firstAttribute="height" constant="40" id="Vfc-PX-QU4"/>
+                                    <constraint firstItem="Can-sX-9V0" firstAttribute="leading" secondItem="jSx-um-lLn" secondAttribute="trailing" constant="25" id="h9c-d0-kgS"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GqV-NO-vXf">
-                                <rect key="frame" x="131" y="100" width="150" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.52099514010000003" green="0.91008859870000003" blue="0.90633934739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="fNZ-Bf-2PA"/>
-                                </constraints>
-                                <state key="normal" title="Show Google Maps">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPC-TQ-M6A">
+                                <rect key="frame" x="313" y="59" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Google Maps"/>
                                 <connections>
-                                    <segue destination="x2h-5y-qXW" kind="show" id="h0q-68-Sxd"/>
+                                    <segue destination="x2h-5y-qXW" kind="show" id="J97-Ss-thB"/>
                                 </connections>
                             </button>
                         </subviews>
