@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,12 @@
 		22EC0A6D23FF628900B022A2 /* MeTA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22EC0A6B23FF628900B022A2 /* MeTA.xcdatamodeld */; };
 		22EC0A6F23FF628A00B022A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EC0A6E23FF628A00B022A2 /* Assets.xcassets */; };
 		22EC0A7223FF628A00B022A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EC0A7023FF628A00B022A2 /* LaunchScreen.storyboard */; };
+		45BE7A1F422FF5CE1FFE2850 /* Pods_MeTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A22F72CEAAF1B3E0B896A09 /* Pods_MeTA.framework */; };
+		D635380524046B28008A98E0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635380424046B28008A98E0 /* MapViewController.swift */; };
+		D635380924047F4F008A98E0 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635380824047F4F008A98E0 /* GooglePlace.swift */; };
+		D635380D240480C3008A98E0 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635380C240480C3008A98E0 /* PlaceMarker.swift */; };
+		D635380F24048400008A98E0 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635380E24048400008A98E0 /* GoogleDataProvider.swift */; };
+		D635381124049752008A98E0 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635381024049752008A98E0 /* TypesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,14 @@
 		22EC0A6E23FF628A00B022A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22EC0A7123FF628A00B022A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22EC0A7323FF628A00B022A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441CEFDA0DB844E1EAB3AED0 /* Pods-MeTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeTA.release.xcconfig"; path = "Target Support Files/Pods-MeTA/Pods-MeTA.release.xcconfig"; sourceTree = "<group>"; };
+		5BF4CBED4C23BB32BDBD589B /* Pods-MeTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeTA.debug.xcconfig"; path = "Target Support Files/Pods-MeTA/Pods-MeTA.debug.xcconfig"; sourceTree = "<group>"; };
+		7A22F72CEAAF1B3E0B896A09 /* Pods_MeTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D635380424046B28008A98E0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D635380824047F4F008A98E0 /* GooglePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		D635380C240480C3008A98E0 /* PlaceMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		D635380E24048400008A98E0 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		D635381024049752008A98E0 /* TypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BE7A1F422FF5CE1FFE2850 /* Pods_MeTA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +65,8 @@
 			children = (
 				22EC0A6123FF628900B022A2 /* MeTA */,
 				22EC0A6023FF628900B022A2 /* Products */,
+				F1121A765D76D81C2F4C8C24 /* Pods */,
+				73258DDA991E756B9925CC98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +86,11 @@
 				22EC0A6623FF628900B022A2 /* ViewController.swift */,
 				22EC0A6823FF628900B022A2 /* Main.storyboard */,
 				227314BC23FF6EBF001C6209 /* HomepageController.swift */,
+				D635380424046B28008A98E0 /* MapViewController.swift */,
+				D635381024049752008A98E0 /* TypesTableViewController.swift */,
+				D635380E24048400008A98E0 /* GoogleDataProvider.swift */,
+				D635380C240480C3008A98E0 /* PlaceMarker.swift */,
+				D635380824047F4F008A98E0 /* GooglePlace.swift */,
 				22EC0A6E23FF628A00B022A2 /* Assets.xcassets */,
 				22EC0A7023FF628A00B022A2 /* LaunchScreen.storyboard */,
 				22EC0A7323FF628A00B022A2 /* Info.plist */,
@@ -79,6 +101,23 @@
 			path = MeTA;
 			sourceTree = "<group>";
 		};
+		73258DDA991E756B9925CC98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A22F72CEAAF1B3E0B896A09 /* Pods_MeTA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1121A765D76D81C2F4C8C24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BF4CBED4C23BB32BDBD589B /* Pods-MeTA.debug.xcconfig */,
+				441CEFDA0DB844E1EAB3AED0 /* Pods-MeTA.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22EC0A7623FF628A00B022A2 /* Build configuration list for PBXNativeTarget "MeTA" */;
 			buildPhases = (
+				0C5B014FA077B5C7B73322DF /* [CP] Check Pods Manifest.lock */,
 				22EC0A5B23FF628900B022A2 /* Sources */,
 				22EC0A5C23FF628900B022A2 /* Frameworks */,
 				22EC0A5D23FF628900B022A2 /* Resources */,
+				18C92FDB25D2E0F9AECDB236 /* [CP] Copy Pods Resources */,
+				943A5D680523401C67C3B044 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +187,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C5B014FA077B5C7B73322DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeTA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18C92FDB25D2E0F9AECDB236 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeTA/Pods-MeTA-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeTA/Pods-MeTA-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeTA/Pods-MeTA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		943A5D680523401C67C3B044 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeTA/Pods-MeTA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeTA/Pods-MeTA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeTA/Pods-MeTA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22EC0A5B23FF628900B022A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,11 +253,16 @@
 			files = (
 				22EC0A6D23FF628900B022A2 /* MeTA.xcdatamodeld in Sources */,
 				22EC0A6723FF628900B022A2 /* ViewController.swift in Sources */,
+				D635380924047F4F008A98E0 /* GooglePlace.swift in Sources */,
 				227314C123FFA6A3001C6209 /* Train.swift in Sources */,
 				227314BF23FFA5B9001C6209 /* TrainCell.swift in Sources */,
+				D635381124049752008A98E0 /* TypesTableViewController.swift in Sources */,
+				D635380D240480C3008A98E0 /* PlaceMarker.swift in Sources */,
+				D635380F24048400008A98E0 /* GoogleDataProvider.swift in Sources */,
 				227314BD23FF6EBF001C6209 /* HomepageController.swift in Sources */,
 				22EC0A6323FF628900B022A2 /* AppDelegate.swift in Sources */,
 				22EC0A6523FF628900B022A2 /* SceneDelegate.swift in Sources */,
+				D635380524046B28008A98E0 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +404,7 @@
 		};
 		22EC0A7723FF628A00B022A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF4CBED4C23BB32BDBD589B /* Pods-MeTA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +422,7 @@
 		};
 		22EC0A7823FF628A00B022A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441CEFDA0DB844E1EAB3AED0 /* Pods-MeTA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

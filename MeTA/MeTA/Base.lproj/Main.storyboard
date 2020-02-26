@@ -68,7 +68,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="AKw-Dz-V6P" kind="presentation" id="VDM-Sc-wZy"/>
+                                                    <segue destination="AKw-Dz-V6P" kind="show" id="6Ft-cL-tL0"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -116,6 +116,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="103" y="119"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="lZU-VK-qfS">
+            <objects>
+                <viewController id="rzj-Ip-LVc" customClass="MapViewController" customModule="MeTA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="spa-Zp-HYs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWo-8d-HJt" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="-14" width="414" height="808"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzT-Qu-sEb">
+                                <rect key="frame" x="0.0" y="738.5" width="414" height="20.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wWo-8d-HJt" firstAttribute="top" secondItem="OZM-vc-7mY" secondAttribute="top" id="Lvj-TS-82L"/>
+                            <constraint firstItem="OZM-vc-7mY" firstAttribute="trailing" secondItem="MzT-Qu-sEb" secondAttribute="trailing" id="O94-9T-qaD"/>
+                            <constraint firstItem="OZM-vc-7mY" firstAttribute="bottom" secondItem="wWo-8d-HJt" secondAttribute="bottom" id="PWH-a6-Erd"/>
+                            <constraint firstItem="OZM-vc-7mY" firstAttribute="bottom" secondItem="MzT-Qu-sEb" secondAttribute="bottom" id="UoR-U3-VhX"/>
+                            <constraint firstItem="OZM-vc-7mY" firstAttribute="trailing" secondItem="wWo-8d-HJt" secondAttribute="trailing" id="hMC-hT-bv4"/>
+                            <constraint firstItem="wWo-8d-HJt" firstAttribute="leading" secondItem="OZM-vc-7mY" secondAttribute="leading" id="l1q-rW-8OI"/>
+                            <constraint firstItem="MzT-Qu-sEb" firstAttribute="leading" secondItem="OZM-vc-7mY" secondAttribute="leading" id="qEZ-Tn-Elo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OZM-vc-7mY"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="9Ag-h6-Puv"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="MzT-Qu-sEb" id="ojE-hx-ibF"/>
+                        <outlet property="mapView" destination="wWo-8d-HJt" id="8FO-RJ-LMM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXM-EY-uGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710.144927536232" y="-632.14285714285711"/>
         </scene>
         <!--Homepage Controller-->
         <scene sceneID="Zvi-vj-4hF">
@@ -202,7 +247,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="rWi-Kg-Ipa" kind="presentation" id="Fj6-2j-vU9"/>
+                                            <segue destination="rWi-Kg-Ipa" kind="show" id="QCb-wK-3O0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -210,6 +255,20 @@
                                     <constraint firstAttribute="height" constant="40" id="Vfc-PX-QU4"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GqV-NO-vXf">
+                                <rect key="frame" x="131" y="100" width="150" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.52099514010000003" green="0.91008859870000003" blue="0.90633934739999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="fNZ-Bf-2PA"/>
+                                </constraints>
+                                <state key="normal" title="Show Google Maps">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x2h-5y-qXW" kind="show" id="h0q-68-Sxd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -226,6 +285,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RM6-RG-28P"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YCB-lT-XpX"/>
                     <connections>
                         <outlet property="tableView" destination="dbU-5g-c7R" id="5ZD-iT-iWr"/>
                     </connections>
@@ -331,10 +391,30 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pch-iF-pXv"/>
                     </view>
+                    <navigationItem key="navigationItem" id="55R-0q-n5l"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5N7-Ff-iIf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1968.1159420289857" y="121.875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sMX-dO-OZx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x2h-5y-qXW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="v6t-of-7UV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BoX-XD-DoZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rzj-Ip-LVc" kind="relationship" relationship="rootViewController" id="Qkf-jG-fUI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySc-Ei-dns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.00000000000011" y="-632.14285714285711"/>
         </scene>
     </scenes>
     <resources>
